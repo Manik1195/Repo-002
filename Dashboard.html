@@ -173,7 +173,70 @@ body::-webkit-scrollbar {
     height:1px;
     background-color: rgba(0,0,0,0.2);
 }
+#plan{
+    background-color: #f5f6f9;
+    
+}
+.plans{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    max-width:1000px;
+    width:100%;
+    margin:0 auto;
+}
+.one{
+    background-color: blueviolet;
+    border-radius:5px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.team-plan{
+    background-color: #eee;
+    margin-top:5px;
+}
+.plan-btn{
+    border:none;
+    outline:none;
+    border:2px solid blueviolet;
+    padding:10px;
+    margin-top:25px;
+    margin-bottom:15px;
+    margin-left:10px;
+    
+}
+.team-plan h2{
+    font-size: 16px;
+    margin:10px;
+    margin-top:10px;
+    padding-top:10px;
+}
+.team-plan p{
+    margin:10px;
+    color:rgba(0,0,0,0.4);
+}
+.team-planning{
+    background-color: #fff;
+    padding:5px;
+}
+.team-planning h2{
+    font-size: 16px;
+    padding-top:15px;
+    padding-left:10px;
+}
+.team-planning p{
+    padding-top:10px;
+    font-size:12px;
+    padding-left:10px;
+     color:rgba(0,0,0,0.3);
 
+}
+.team-planning ul  {
+    list-style:none;
+    display:inline-block;
+    line-height:40px;
+    color:rgba(0,0,0,0.7);
+}
     </style>
 </head>
 <body>
@@ -186,7 +249,7 @@ body::-webkit-scrollbar {
             <li><a href="#"><i class="bi bi-house-add-fill"></i>  Dashboard</a></li>
             <li><a href="#courses"><i class="bi bi-book-fill"></i>  Courses</a></li>
             <li><a href="#about"><i class="bi bi-person-fill-add"></i>  About</a></li>
-            <li><a href="#"><i class="bi bi-door-open-fill"></i>  Logout</a></li>
+            <li><a href="#plan"><i class="bi bi-door-open-fill"></i>  Plans</a></li>
             <li><a href="#"><i class="bi bi-telephone-fill"></i> Contact</a></li>
         </ul>
     </div>
@@ -245,6 +308,36 @@ body::-webkit-scrollbar {
             </div>
         </div>
     </div>
+    </section>
+    <section id="plan">
+        <div class="caption">
+            <h1>Grow your team's skills and your business</h1>
+            <p>Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.</p>
+        </div>
+        <div class="plans">
+            <div class="one">
+                <div class="team-plan">
+                    <h2>Team plan</h2>
+                    <p><i class="bi bi-people"></i>2 to 50 people-For your team</p>
+                    <button class="plan-btn">Start Subscripton</button>
+                </div>
+                <div class="team-planning">
+                    <h2>₹2,000 a month per user</h2>
+                    <p>Billed annually. Cancel anytime.</p>
+                    <ul>
+                        <li>Access to 13,000+ top courses</li>
+                        <li>Certification prep</li>
+                        <li>Goal-focused recommendations</li>
+                        <li>AI-powered coaching</li>
+                        <li>Analytics and adoption reports</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="two">
+                
+            </div>
+            <div class="three"></div>
+        </div>
     </section>
 </body>
 </html>
