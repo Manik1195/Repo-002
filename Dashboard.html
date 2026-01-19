@@ -12,42 +12,41 @@
             box-sizing: border-box;
             font-family:sans-serif;
         }
-        body{
-            background-image: url("./nature.jfif");
-            background-position:center;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        .sidebar{
-            position:fixed;
-            left:0;
-            height:100%;
-            width:250px;
-            background-color: #042331;
-        }
-        .sidebar .header{
-            font-size:25px;
-            color:#fff;
-            text-align: center;
-            line-height: 70px;
-            background-color: #063146;
-        }
-        ul li a{
-          list-style: none;
-          padding-left:40px;
-          color:white;
-          line-height:70px;
-          text-decoration: none;
-          display:flex;
-          gap:10px;
-          border-top:1px solid rgba(255,255,255,.1);
-          border-bottom:1px solid rgba(255,255,255,.1) ;
-        }
-        ul li a:hover{
-            background-color: rgba(255,255,255,.1);
-            transition:0.5s;
-            padding-left:30px;
-        }
+       .sidebar{
+        background-color: #f5f6f9;
+        display:flex;
+        justify-content: space-between;
+       }
+       .sidebar .header{
+        padding:15px;
+        font-size:25px;
+       }
+       ul li {
+         list-style: none;
+       }
+        ul {
+       
+        display:flex;
+        gap:15px;
+        padding:15px;
+        align-items: center;
+      
+       }
+       ul li a{
+            text-decoration: none;
+        color:#444;
+        padding:10px;
+        
+       }
+       ul li a:last-child{
+        margin-right:10px;
+       }
+       ul li a:hover{
+         background-color: #e6e4e4;
+         border-radius:10px;
+         transition:.4s;
+
+       }
     </style>
 </head>
 <body>
