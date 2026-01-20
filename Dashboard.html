@@ -8,7 +8,7 @@
     <style>
         *{
             margin:0;
-            padding:0;
+            padding:0; 
             box-sizing: border-box;
             font-family:sans-serif;
         }
@@ -104,46 +104,52 @@
         gap:70px;
         grid-template-columns: repeat(3,1fr);
        }
-       .react,.asp,.Java{
-        
-         display:flex;
-        flex-direction: column;
-        gap:10px;
-        box-shadow: 0 4px 7px rgb(221, 221, 223);
+       .react,.java,.asp,.python{
+        box-shadow: 0 4px 7px rgb(209, 206, 206);
         padding:10px;
-        border-radius:10px;
        }
+       
        .react img,.asp img,.Java img{
-               width:70%;
-               height:60%;
-               margin-left:40px;
-               margin-top:20px;
-            
-            
-               
-            
-             
-       }
+               width:100%;
+               height:100%;
+               object-fit: cover;
+               }
        .details{
-        display: flex;
-        justify-content: space-between;
-        margin:30px 20px;
+        display:flex;
+        flex-direction: column;
+        margin-top:10px;
+        gap:10px;
+       }
+       .details p{
+          font-weight:600;
+          margin-top:10px;
+          font-size:20px;
+          font-family:calibri;
+       }
+       .details .rating{
+        font-weight:500;
+        font-size:16px;
        }
        .button{
         display:flex;
         flex-direction: column;
-        gap:20px;
+        gap:10px;
+        margin-top:-15px;
         
         
        }
-       .sample,.Buy{
+       .watch,.Buy{
          border:none;
         outline:none;
         padding:10px;
         border-radius:10px;
        }
+       .watch{
+        border:1px solid blueviolet;
+        background-color: transparent;
+       }
        .Buy{
-          background-color: black;
+          background-color:rgb(161, 101, 216);
           color:#fff;
        }
        #about{
@@ -158,7 +164,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 .caption h1{
-    margin-top:100px;
+    /* margin-top:100px; */
+    padding-top:30px;
     color:#444;
     font-size:48px;
     margin-left:20px;
@@ -391,6 +398,40 @@ body::-webkit-scrollbar {
     background-color: rgb(186, 183, 189);
     transition:.4s;
 }
+.courses{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.react,.python,.java,.asp{
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    border-radius:10px;
+    
+}
+.react:hover,.python:hover,.java:hover,.asp:hover{
+    background-color: #f5f6f9;
+}
+.react .image img,.python .image img,.asp .image img,.java .image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+.price{
+    display:flex;
+    color:rgba(0,0,0,0.6);
+    gap:5px;
+    margin-top:-50px;
+}
+.price p{
+    color:rgba(0,0,0,0.8);
+    font-size:18px;
+}
+.price span{
+    text-decoration: line-through;
+    font-size:16px;
+}
+
 
     </style>
 </head>
@@ -425,44 +466,80 @@ body::-webkit-scrollbar {
         <p>From critical skills to technical topics, Udemy supports your professional development.</p>
     </div>
     <section id="courses">
-    <div class="courses">
+     <div class="courses">
         <div class="react">
+          <div class="image">
             <img src="./react.png"/>
-            <div class="line"></div>
-            <div class="details">
-            <p>React course</p>
-            <p>4.5/5</p>
-            </div>
-            <div class="button">
-                <button class="sample">Watch sample</button>
-                <button class="Buy">Buy Now</button>
-            </div>
+          </div>
+          <div class="details">
+            <p>100 days of code:The complete React JS course</p>
+            <p class="rating">4.5/5</p>
+          </div>
+           <div class="button">
+            <button class="watch">Watch Demo</button>  
+            <button class="Buy">Buy Now</button> 
+          </div>
+          <div class="price">
+            <p><i class="bi bi-currency-rupee"></i>450</p>
+            <span><i class="bi bi-currency-rupee"></i>600</span>
+            
+          </div>
+        </div>
+        <div class="python">
+          <div class="image">
+            <img src="./python.jfif"/>
+          </div>
+          <div class="details">
+            <p>100 days of code:The complete Python course</p>
+            <p class="rating">4.5/5</p>
+          </div>
+          <div class="button">
+            <button class="watch">Watch Demo</button>  
+            <button class="Buy">Buy Now</button> 
+          </div>
+           <div class="price">
+            <p><i class="bi bi-currency-rupee"></i>450</p>
+            <span><i class="bi bi-currency-rupee"></i>600</span>
+            
+          </div>
         </div>
         <div class="asp">
-            <img src="./asp.jfif"/>
-             <div class="line"></div>
-            <div class="details">
-            <p>ASP.net core course</p>
-            <p>4.5/5</p>
-            </div>
-            <div class="button">
-                <button class="sample">Watch sample</button>
-                <button class="Buy">Buy Now</button>
-            </div>
+            <div class="image">
+            <img src="./asp.jpg">
+          </div>
+          <div class="details">
+            <p>100 days of code:The complete ASP.net course</p>
+            <p class="rating">4.5/5</p>
+          </div>
+           <div class="button">
+            <button class="watch">Watch Demo</button>  
+            <button class="Buy">Buy Now</button> 
+          </div>
+           <div class="price">
+            <p><i class="bi bi-currency-rupee"></i>450</p>
+            <span><i class="bi bi-currency-rupee"></i>600</span>
+            
+          </div>
         </div>
-        <div class="Java">
-            <img src="./java.png">
-             <div class="line"></div>
-            <div class="details">
-            <p>Java course</p>
-            <p>4.5/5</p>
-            </div>
-            <div class="button">
-                <button class="sample">Watch sample</button>
-                <button class="Buy">Buy Now</button>
-            </div>
+        <div class="java">
+          <div class="image">
+            <img src="./java.jpg"/>
+          </div>
+          <div class="details">
+            <p>100 days of code:The complete Java course</p>
+            <p class="rating">4.5/5</p>
+          </div>
+           <div class="button">
+            <button class="watch">Watch Demo</button>  
+            <button class="Buy">Buy Now</button> 
+          </div>
+           <div class="price">
+            <p><i class="bi bi-currency-rupee"></i>450</p>
+            <span><i class="bi bi-currency-rupee"></i>600</span>
+            
+          </div>
         </div>
-    </div>
+     </div>
     </section>
     <section id="plan">
         <div class="caption">
@@ -539,18 +616,18 @@ body::-webkit-scrollbar {
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
     <section id="skill">
         <div class="skill">
             <div class="skill-content">
                 <h1>Get the 2026 Global Learning & Skills Trends Report</h1>
                 <p>If you or your organization are looking for help navigating change and AI transformation, you’ll find a roadmap for action in our popular annual report.</p>
-                <button class="btn">Download now<i class="bi bi-arrow-right"></i></button>
+                <button class="btn">Download now <i class="bi bi-arrow-right"></i></button>
             </div>
             <div class="skill-image">
                 <img src="./book.png"/>
             </div>
         </div>
-    </section>
+    </section> 
 </body>
 </html>
