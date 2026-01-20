@@ -39,7 +39,7 @@
       
        }
        ul li a{
-            text-decoration: none;
+         text-decoration: none;
         color:#444;
         padding:10px;
         
@@ -181,47 +181,77 @@ body::-webkit-scrollbar {
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
-    max-width:1000px;
+    max-width:1200px;
     width:100%;
-    margin:0 auto;
+    margin:0 50px;
+    margin-top:40px;
 }
 .one{
-    background-color: blueviolet;
+    background-color: #fff;
     border-radius:5px;
     margin-top:20px;
     margin-bottom:20px;
+    border:1px solid rgba(0,0,0,0.2);
+}
+.two{
+    background-color: #fff;
+    border-radius:5px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:1px solid rgba(0,0,0,0.2);
+}
+.three{
+     background-color: #fff;
+    border-radius:5px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:1px solid rgba(0,0,0,0.2);
 }
 .team-plan{
     background-color: #eee;
-    margin-top:5px;
+    margin-top:-10px;
+    
 }
 .plan-btn{
     border:none;
     outline:none;
-    border:2px solid blueviolet;
+    border:1px solid blueviolet;
     padding:10px;
     margin-top:25px;
     margin-bottom:15px;
     margin-left:10px;
+    border-radius:5px;
+    color:blueviolet;
+    font-weight:600;
     
+}
+.plan-btn:hover{
+    background-color: rgb(186, 183, 189);
+    transition:.4s;
 }
 .team-plan h2{
     font-size: 16px;
     margin:10px;
-    margin-top:10px;
+    /* margin-top:10px; */
     padding-top:10px;
 }
 .team-plan p{
     margin:10px;
+    font-size:14px;
     color:rgba(0,0,0,0.4);
+}
+.team-plan p i {
+    margin-right:10px;
 }
 .team-planning{
     background-color: #fff;
     padding:5px;
+     border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .team-planning h2{
     font-size: 16px;
-    padding-top:15px;
+    /* padding-top:15px; */
     padding-left:10px;
 }
 .team-planning p{
@@ -232,11 +262,136 @@ body::-webkit-scrollbar {
 
 }
 .team-planning ul  {
-    list-style:none;
+    
     display:inline-block;
     line-height:40px;
-    color:rgba(0,0,0,0.7);
+    color:rgba(0,0,0,0.6);
+    margin-left:10px;
+  
+    
 }
+.line-1{
+      position:relative;
+}
+.line-1::after{
+    content:"";
+    position:absolute;
+    width:1px;
+    height:90%;
+    left:12px;
+    top:20px;
+    background-color:rgba(0,0,0,0.1);
+}
+.team-planning ul li{
+    list-style:disc;
+}
+.empty{
+    background-color: blueviolet;
+    height:10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.empty-1{
+      background-color: blue;
+    height:10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+ .empty-2{
+     background-color: black;
+    height:10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} 
+.info i{
+    margin-right:10px;
+}
+.team-ai{
+    background-color: #fff;
+    padding:10px;
+
+}
+.team-ai1{
+    background-color: #fff;
+    padding:10px;
+    padding-top:20px;
+
+}
+.team-ai h2{
+     font-size: 16px;
+     /* padding-top:15px; */
+    padding-left:10px;
+}
+.team-ai .info{
+     padding-top:10px;
+    font-size:12px;
+    padding-left:10px;
+     color:rgba(0,0,0,0.3);
+}
+.team-ai .info-1{
+    font-size:16px;
+    padding-left:5px;
+    line-height:30px;
+    padding-top:10px;
+    color:rgba(0,0,0,0.6);
+}
+.team-ai1 h2{
+     font-size: 16px;
+     /* padding-top:15px; */
+    padding-left:10px;
+}
+.team-ai1 .info{
+     padding-top:10px;
+    font-size:12px;
+    padding-left:10px;
+     color:rgba(0,0,0,0.6);
+}
+.team-ai1 .info-1{
+    font-size:16px;
+    padding-left:5px;
+    line-height:30px;
+    padding-top:10px;
+     color:rgba(0,0,0,0.6);
+}
+.skill{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+.skill-content{
+    margin-top:40px;
+}
+.skill-content h1{
+    font-size:36px;
+    padding-left:10px;
+}
+.skill-content p{
+    font-size:24px;
+    padding:20px 10px;
+    font-family: calibri;
+    color:rgba(0,0,0,0.6);
+}
+.skill-image img{
+    width:100%;
+    height:100%;
+}
+.skill-content .btn{
+    border:none;
+    outline:none;
+    border:1px solid blueviolet;
+    padding:10px;
+    background-color: transparent;
+    margin:20px 10px;
+    color:blueviolet;
+    font-weight:600;
+
+}
+.skill-content .btn:hover{
+    background-color: rgb(186, 183, 189);
+    transition:.4s;
+}
+
     </style>
 </head>
 <body>
@@ -246,7 +401,7 @@ body::-webkit-scrollbar {
         </div>
         <ul>
             <li><a href="#"><i class="bi bi-house-add-fill"></i>  Home</a></li>
-            <li><a href="#"><i class="bi bi-house-add-fill"></i>  Dashboard</a></li>
+            <li><a href="#skill"><i class="bi bi-house-add-fill"></i>  Skill</a></li>
             <li><a href="#courses"><i class="bi bi-book-fill"></i>  Courses</a></li>
             <li><a href="#about"><i class="bi bi-person-fill-add"></i>  About</a></li>
             <li><a href="#plan"><i class="bi bi-door-open-fill"></i>  Plans</a></li>
@@ -316,6 +471,7 @@ body::-webkit-scrollbar {
         </div>
         <div class="plans">
             <div class="one">
+                <div class="empty"></div>
                 <div class="team-plan">
                     <h2>Team plan</h2>
                     <p><i class="bi bi-people"></i>2 to 50 people-For your team</p>
@@ -324,19 +480,76 @@ body::-webkit-scrollbar {
                 <div class="team-planning">
                     <h2>₹2,000 a month per user</h2>
                     <p>Billed annually. Cancel anytime.</p>
+                    <div class="line-1">
                     <ul>
                         <li>Access to 13,000+ top courses</li>
                         <li>Certification prep</li>
                         <li>Goal-focused recommendations</li>
                         <li>AI-powered coaching</li>
                         <li>Analytics and adoption reports</li>
-                    </ul>
+                    </ul></div>
                 </div>
             </div>
             <div class="two">
-                
+                <div class="empty-1"></div>
+                <div class="team-plan">
+                    <h2>Enterprise plan</h2>
+                    <p><i class="bi bi-people"></i>More than 20 people - For your whole organization</p>
+                    <button class="plan-btn">Request a demo</button>
+                </div>
+                <div class="team-planning">
+                    <h2>Contact sales for pricing</h2>
+                    <p>Billed annually. Cancel anytime.</p>
+                    <div class="line-1">
+                    <ul>
+                        <li>Access to 30,000+ top courses</li>
+                        <li>Certification prep</li>
+                        <li>Goal-focused recommendations</li>
+                        <li>AI-powered coaching</li>
+                        <li>Analytics and adoption reports</li>
+                        <li>Dedicated customer success team</li>
+                        <li>International course collection featuring 15 languages</li>
+                        <li>Customizable content</li>
+                        <li>Hands-on tech training with add-on</li>
+                        <li>Strategic implementation services with add-on</li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-            <div class="three"></div>
+            <div class="three">
+                <div class="empty-2"></div>
+                 <div class="team-plan">
+                    <h2>AI Fluency</h2>
+                    <p><i class="bi bi-people"></i>From AI foundations to Enterprise transformation </p>
+                    <button class="plan-btn">Contact us</button>
+                </div>
+                <div class="team-ai">
+                    <h2>AI Readiness Collection</h2>
+                    <p class="info"><i class="bi bi-people"></i>More than 100 people.</p>
+                    <p class="info-1">Build org-wide AI fluency fast with 50 curated courses + AI Assistant to accelerate learning.</p>
+
+                    
+                </div>
+                <div class="team-ai1">
+                    <h2>AI Growth Collection</h2>
+                    <p class="info"><i class="bi bi-people"></i>More than 20 people.</p>
+                    <p class="info-1">Scale AI and technical expertise with 800+ specialized courses and 30+ role-specific learning paths in multiple languages..</p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <div class="skill">
+            <div class="skill-content">
+                <h1>Get the 2026 Global Learning & Skills Trends Report</h1>
+                <p>If you or your organization are looking for help navigating change and AI transformation, you’ll find a roadmap for action in our popular annual report.</p>
+                <button class="btn">Download now<i class="bi bi-arrow-right"></i></button>
+            </div>
+            <div class="skill-image">
+                <img src="./book.png"/>
+            </div>
         </div>
     </section>
 </body>
